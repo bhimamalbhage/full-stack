@@ -1,0 +1,17 @@
+{
+  "name": "simple-fullstack-app",
+  "version": "1.0.0",
+  "description": "Simple full-stack application for AWS deployment",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "node server.js"
+  },
+  "keywords": ["express", "node", "aws"],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.18.2",
+    "cors": "^2.8.5"
+  }
+}

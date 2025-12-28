@@ -1,17 +1,17 @@
 {
-  "name": "simple-fullstack-app",
+  "name": "full-stack",
   "version": "1.0.0",
-  "description": "Simple full-stack application for AWS deployment",
-  "main": "server.js",
+  "description": "A lightweight, containerized full-stack application optimized for AWS deployment.",
+  "main": "index.js",
   "scripts": {
-    "start": "node server.js",
-    "dev": "node server.js"
+    "start": "concurrently \"npm run start --prefix backend\" \"npm run dev --prefix frontend\"",
+    "build": "cd frontend && npm run build",
+    "install:all": "npm install && cd backend && npm install && cd ../frontend && npm install"
   },
-  "keywords": ["express", "node", "aws"],
+  "keywords": [],
   "author": "",
   "license": "ISC",
-  "dependencies": {
-    "express": "^4.18.2",
-    "cors": "^2.8.5"
+  "devDependencies": {
+    "concurrently": "^9.2.1"
   }
 }
