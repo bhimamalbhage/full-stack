@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Simple Full-Stack Application">
+    <title>Full-Stack App | AWS Deployment Ready</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Full-Stack Application</h1>
+            <p class="subtitle">Backend + Frontend in One Container</p>
+        </header>
+
+        <main>
+            <section class="card">
+                <h2>Backend Status</h2>
+                <div id="status-indicator" class="status-indicator">
+                    <div class="status-dot"></div>
+                    <span id="status-text">Checking...</span>
+                </div>
+                <button id="check-health" class="btn">Check Health</button>
+            </section>
+
+            <section class="card">
+                <h2>API Demo</h2>
+                <button id="fetch-data" class="btn btn-primary">Fetch Data from API</button>
+                <pre id="api-response" class="response-box"></pre>
+            </section>
+
+            <section class="card">
+                <h2>Send Data</h2>
+                <input 
+                    type="text" 
+                    id="data-input" 
+                    placeholder="Enter some data..." 
+                    class="input-field"
+                >
+                <button id="send-data" class="btn btn-primary">Send to Backend</button>
+                <pre id="send-response" class="response-box"></pre>
+            </section>
+
+            <section class="info-card">
+                <h3>Deployment Info</h3>
+                <ul>
+                    <li>✅ Docker containerized</li>
+                    <li>✅ Health check endpoint: <code>/health</code></li>
+                    <li>✅ AWS deployment ready</li>
+                    <li>✅ Fast build optimized</li>
+                </ul>
+            </section>
+        </main>
+
+        <footer>
+            <p>Ready for AWS ECS, EC2, or Elastic Beanstalk deployment</p>
+        </footer>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
